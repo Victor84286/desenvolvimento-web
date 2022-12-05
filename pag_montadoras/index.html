@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="topo" style="width:auto; height:50px; background-color: blue;"></div>
+    <label>Muda cor</label>
+    <input type="color" id="color_background" onchange="muda_cor()">
+    <hr>
+    <label>Quantidade de montadoras</label>
+    <input type="number" id="quantidade" name="quantidade" onchange="altera_quantidade()">
+    <br>
+    <select id="montadoras" onchange="selecionar()">
+    </select>
+    <hr>
+    <span id="escolha"></span>
+    <hr>
+    <label>Nova Montadora</label>
+    <input type="text" id="nova_montadora" name="nova_montadora">
+    <input type="button" id="add_montadora" onclick="add_montadora()" value="add montadora">
+    <hr>
+    <input type="button" id="remove_montadora" value="Remove montadora" onclick="remove_montadora()">
+</body>
+</html>

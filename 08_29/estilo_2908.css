@@ -1,0 +1,10 @@
+.bunda{
+    font-size:30pt;
+    font-family: 'Aboreto', cursive;
+}
+
+#primeira_div{
+    background-color: blue;
+    max-width: 50vw;
+    min-height: 3em;
+}

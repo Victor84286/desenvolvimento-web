@@ -1,0 +1,77 @@
+.card{
+    width: 15em;
+    height: 20em;
+    background-color: lightgray;
+    margin: 0 auto 1em;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+.foto{
+    margin: 5px;
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+}
+
+.nome{
+    margin: 5px;
+    flex-grow: 1;
+    border: 1px solid black;
+}
+
+.flexivel{
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+}
+
+.texto{
+    margin:5px;
+    border: 1px solid black;
+    font-size: larger;
+    height: 60%;
+    overflow: scroll;
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3px;
+    }
+
+    .card{
+        width: 20em;
+        height: 15em;
+        ;
+    }
+
+    .flexivel{
+        flex-flow: row;
+        align-items: center;
+        margin: .5em
+    }
+
+    .flexivel h6{
+        flex-grow: 1;
+        font-size: large;
+    }
+
+    .flexivel img{
+        width: 5em;
+        border-radius: 100%;
+    }
+
+    .texto{
+        height: 50%;
+    }
+}
+
+/* desktop*/
+
+@media screen and (min-width: 992px) {
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

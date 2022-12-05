@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Html + Javascript</title>
+    <script src="leitor.js"></script>
+</head>
+<body>
+    <div style="display: flex; gap:2em"></div>
+    <div>
+        <ol>
+            <li>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">https://developer.mozilla.org/pt-BR/docs/Web/JavaScript</a>
+            </li>
+            <li>JavaScript e DOM</li>
+            <li>Funções</li>
+            <li>Estruturas e decisao</li>
+            <li>Estruturas de repetição</li>
+            <li>array map</li>
+            <li>array reduce</li>
+        </ol>
+        <div id="colorida" style="width: 100%; height: 3em"></div>
+        <div id="paragrafos">
+            <p>Lorem <span id="primeiro_span" class="meu_texto">ipsum</span> dolor sit amet consectetur adipisicing elit. Possimus beatae ea, ipsam esse exercitationem blanditiis dolorum, odit magnam a deleniti illo nam sapiente, laboriosam saepe dolorem iure atque totam modi.</p>
+            <p>Lorem ipsum dolor sit <span class="meu_texto">amet</span> consectetur adipisicing elit. Rem cupiditate mollitia ut? Possimus dignissimos unde praesentium harum vitae ex ut enim quas. Cum, error nesciunt. Sequi dolor similique adipisci est!</p>
+
+        </div>
+        <div id="inputs">
+            <input type="text" name="meu_texto" id="meu_texto" onblur="muda_texto()">
+        </div>
+        <ul id="minha_lista"></ul>
+    </div>
+</body>
+</html>
